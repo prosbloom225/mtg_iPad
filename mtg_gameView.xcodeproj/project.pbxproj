@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E53838D7152E075000AC44FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E53838D6152E075000AC44FA /* UIKit.framework */; };
+		E53838D9152E075000AC44FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E53838D8152E075000AC44FA /* Foundation.framework */; };
+		E53838DB152E075000AC44FA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E53838DA152E075000AC44FA /* CoreGraphics.framework */; };
+		E53838E1152E075000AC44FA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E53838DF152E075000AC44FA /* InfoPlist.strings */; };
+		E53838E3152E075000AC44FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E53838E2152E075000AC44FA /* main.m */; };
+		E53838E7152E075000AC44FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E53838E6152E075000AC44FA /* AppDelegate.m */; };
+		E53838EA152E075000AC44FA /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E53838E8152E075000AC44FA /* MainStoryboard.storyboard */; };
+		E53838ED152E075000AC44FA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E53838EC152E075000AC44FA /* ViewController.m */; };
+		E53838F5152E075000AC44FA /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E53838F4152E075000AC44FA /* SenTestingKit.framework */; };
+		E53838F6152E075000AC44FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E53838D6152E075000AC44FA /* UIKit.framework */; };
+		E53838F7152E075000AC44FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E53838D8152E075000AC44FA /* Foundation.framework */; };
+		E53838FF152E075000AC44FA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E53838FD152E075000AC44FA /* InfoPlist.strings */; };
+		E5383902152E075000AC44FA /* mtg_gameViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E5383901152E075000AC44FA /* mtg_gameViewTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E53838F8152E075000AC44FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E53838C9152E075000AC44FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E53838D1152E075000AC44FA;
+			remoteInfo = mtg_gameView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E53838D2152E075000AC44FA /* mtg_gameView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mtg_gameView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E53838D6152E075000AC44FA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E53838D8152E075000AC44FA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E53838DA152E075000AC44FA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E53838DE152E075000AC44FA /* mtg_gameView-Info.plist */ = {isa = PBXFileReference; path = "mtg_gameView-Info.plist"; sourceTree = "<group>"; };
+		E53838E0152E075000AC44FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E53838E2152E075000AC44FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E53838E4152E075000AC44FA /* mtg_gameView-Prefix.pch */ = {isa = PBXFileReference; path = "mtg_gameView-Prefix.pch"; sourceTree = "<group>"; };
+		E53838E5152E075000AC44FA /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		E53838E6152E075000AC44FA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E53838E9152E075000AC44FA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		E53838EB152E075000AC44FA /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		E53838EC152E075000AC44FA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E53838F3152E075000AC44FA /* mtg_gameViewTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mtg_gameViewTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E53838F4152E075000AC44FA /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		E53838FC152E075000AC44FA /* mtg_gameViewTests-Info.plist */ = {isa = PBXFileReference; path = "mtg_gameViewTests-Info.plist"; sourceTree = "<group>"; };
+		E53838FE152E075000AC44FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E5383900152E075000AC44FA /* mtg_gameViewTests.h */ = {isa = PBXFileReference; path = mtg_gameViewTests.h; sourceTree = "<group>"; };
+		E5383901152E075000AC44FA /* mtg_gameViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mtg_gameViewTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E53838CF152E075000AC44FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E53838D7152E075000AC44FA /* UIKit.framework in Frameworks */,
+				E53838D9152E075000AC44FA /* Foundation.framework in Frameworks */,
+				E53838DB152E075000AC44FA /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E53838EF152E075000AC44FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E53838F5152E075000AC44FA /* SenTestingKit.framework in Frameworks */,
+				E53838F6152E075000AC44FA /* UIKit.framework in Frameworks */,
+				E53838F7152E075000AC44FA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E53838C7152E075000AC44FA = {
+			isa = PBXGroup;
+			children = (
+				E53838DC152E075000AC44FA /* mtg_gameView */,
+				E53838FA152E075000AC44FA /* mtg_gameViewTests */,
+				E53838D5152E075000AC44FA /* Frameworks */,
+				E53838D3152E075000AC44FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E53838D3152E075000AC44FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E53838D2152E075000AC44FA /* mtg_gameView.app */,
+				E53838F3152E075000AC44FA /* mtg_gameViewTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E53838D5152E075000AC44FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E53838D6152E075000AC44FA /* UIKit.framework */,
+				E53838D8152E075000AC44FA /* Foundation.framework */,
+				E53838DA152E075000AC44FA /* CoreGraphics.framework */,
+				E53838F4152E075000AC44FA /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E53838DC152E075000AC44FA /* mtg_gameView */ = {
+			isa = PBXGroup;
+			children = (
+				E53838E5152E075000AC44FA /* AppDelegate.h */,
+				E53838E6152E075000AC44FA /* AppDelegate.m */,
+				E53838E8152E075000AC44FA /* MainStoryboard.storyboard */,
+				E53838EB152E075000AC44FA /* ViewController.h */,
+				E53838EC152E075000AC44FA /* ViewController.m */,
+				E53838DD152E075000AC44FA /* Supporting Files */,
+			);
+			path = mtg_gameView;
+			sourceTree = "<group>";
+		};
+		E53838DD152E075000AC44FA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E53838DE152E075000AC44FA /* mtg_gameView-Info.plist */,
+				E53838DF152E075000AC44FA /* InfoPlist.strings */,
+				E53838E2152E075000AC44FA /* main.m */,
+				E53838E4152E075000AC44FA /* mtg_gameView-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E53838FA152E075000AC44FA /* mtg_gameViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				E5383900152E075000AC44FA /* mtg_gameViewTests.h */,
+				E5383901152E075000AC44FA /* mtg_gameViewTests.m */,
+				E53838FB152E075000AC44FA /* Supporting Files */,
+			);
+			path = mtg_gameViewTests;
+			sourceTree = "<group>";
+		};
+		E53838FB152E075000AC44FA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E53838FC152E075000AC44FA /* mtg_gameViewTests-Info.plist */,
+				E53838FD152E075000AC44FA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E53838D1152E075000AC44FA /* mtg_gameView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5383905152E075000AC44FA /* Build configuration list for PBXNativeTarget "mtg_gameView" */;
+			buildPhases = (
+				E53838CE152E075000AC44FA /* Sources */,
+				E53838CF152E075000AC44FA /* Frameworks */,
+				E53838D0152E075000AC44FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mtg_gameView;
+			productName = mtg_gameView;
+			productReference = E53838D2152E075000AC44FA /* mtg_gameView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E53838F2152E075000AC44FA /* mtg_gameViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5383908152E075000AC44FA /* Build configuration list for PBXNativeTarget "mtg_gameViewTests" */;
+			buildPhases = (
+				E53838EE152E075000AC44FA /* Sources */,
+				E53838EF152E075000AC44FA /* Frameworks */,
+				E53838F0152E075000AC44FA /* Resources */,
+				E53838F1152E075000AC44FA /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E53838F9152E075000AC44FA /* PBXTargetDependency */,
+			);
+			name = mtg_gameViewTests;
+			productName = mtg_gameViewTests;
+			productReference = E53838F3152E075000AC44FA /* mtg_gameViewTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E53838C9152E075000AC44FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = E53838CC152E075000AC44FA /* Build configuration list for PBXProject "mtg_gameView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E53838C7152E075000AC44FA;
+			productRefGroup = E53838D3152E075000AC44FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E53838D1152E075000AC44FA /* mtg_gameView */,
+				E53838F2152E075000AC44FA /* mtg_gameViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E53838D0152E075000AC44FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E53838E1152E075000AC44FA /* InfoPlist.strings in Resources */,
+				E53838EA152E075000AC44FA /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E53838F0152E075000AC44FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E53838FF152E075000AC44FA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E53838F1152E075000AC44FA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E53838CE152E075000AC44FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E53838E3152E075000AC44FA /* main.m in Sources */,
+				E53838E7152E075000AC44FA /* AppDelegate.m in Sources */,
+				E53838ED152E075000AC44FA /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E53838EE152E075000AC44FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5383902152E075000AC44FA /* mtg_gameViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E53838F9152E075000AC44FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E53838D1152E075000AC44FA /* mtg_gameView */;
+			targetProxy = E53838F8152E075000AC44FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E53838DF152E075000AC44FA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E53838E0152E075000AC44FA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E53838E8152E075000AC44FA /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E53838E9152E075000AC44FA /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		E53838FD152E075000AC44FA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E53838FE152E075000AC44FA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E5383903152E075000AC44FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		E5383904152E075000AC44FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E5383906152E075000AC44FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mtg_gameView/mtg_gameView-Prefix.pch";
+				INFOPLIST_FILE = "mtg_gameView/mtg_gameView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E5383907152E075000AC44FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mtg_gameView/mtg_gameView-Prefix.pch";
+				INFOPLIST_FILE = "mtg_gameView/mtg_gameView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E5383909152E075000AC44FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/mtg_gameView.app/mtg_gameView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mtg_gameView/mtg_gameView-Prefix.pch";
+				INFOPLIST_FILE = "mtg_gameViewTests/mtg_gameViewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		E538390A152E075000AC44FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/mtg_gameView.app/mtg_gameView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mtg_gameView/mtg_gameView-Prefix.pch";
+				INFOPLIST_FILE = "mtg_gameViewTests/mtg_gameViewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E53838CC152E075000AC44FA /* Build configuration list for PBXProject "mtg_gameView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5383903152E075000AC44FA /* Debug */,
+				E5383904152E075000AC44FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5383905152E075000AC44FA /* Build configuration list for PBXNativeTarget "mtg_gameView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5383906152E075000AC44FA /* Debug */,
+				E5383907152E075000AC44FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E5383908152E075000AC44FA /* Build configuration list for PBXNativeTarget "mtg_gameViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5383909152E075000AC44FA /* Debug */,
+				E538390A152E075000AC44FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E53838C9152E075000AC44FA /* Project object */;
+}
