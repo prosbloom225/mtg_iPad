@@ -7,8 +7,14 @@
 //
 
 #import "ViewController.h"
+#import "Card.h"
+
+
 
 @implementation ViewController
+@synthesize managedObjectContext;
+
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -21,7 +27,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	// User Code
+    Card *testCard1 = [[Card alloc] initWithCardID: 1];
+    Card *testCard2 = [[Card alloc] initWithCardID: 2];
+    Card *testCard3 = [[Card alloc] initWithCardID: 3];
+    Card *testCard4 = [[Card alloc] initWithCardID: 4];
+    Card *testCard5 = [[Card alloc] initWithCardID: 5];
+    
+    [self.view addSubview:testCard1];
+    [self.view addSubview:testCard2]; 
+    [self.view addSubview:testCard3];
+    [self.view addSubview:testCard4];
+    [self.view addSubview:testCard5];
+    
+
 }
 
 - (void)viewDidUnload

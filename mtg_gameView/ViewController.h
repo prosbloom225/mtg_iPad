@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+
+#define myAppDelegate [[UIApplication sharedApplication] delegate]
+
 @interface ViewController : UIViewController
+{
+}
+
+@property (nonatomic,strong) NSManagedObjectContext* managedObjectContext;
 
 @end

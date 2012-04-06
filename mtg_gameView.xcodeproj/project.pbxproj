@@ -20,6 +20,16 @@
 		E53838F7152E075000AC44FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E53838D8152E075000AC44FA /* Foundation.framework */; };
 		E53838FF152E075000AC44FA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E53838FD152E075000AC44FA /* InfoPlist.strings */; };
 		E5383902152E075000AC44FA /* mtg_gameViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E5383901152E075000AC44FA /* mtg_gameViewTests.m */; };
+		E538390E152E08D800AC44FA /* mtg_iPad_frame.png in Resources */ = {isa = PBXBuildFile; fileRef = E538390D152E08D800AC44FA /* mtg_iPad_frame.png */; };
+		E5383912152E09A900AC44FA /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = E5383911152E09A900AC44FA /* Card.m */; };
+		E5383916152E0D5B00AC44FA /* mtg_cardBack.png in Resources */ = {isa = PBXBuildFile; fileRef = E5383915152E0D5B00AC44FA /* mtg_cardBack.png */; };
+		E5A593A7152EB0BE004EB923 /* CardDb.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = E5A593A6152EB0BE004EB923 /* CardDb.sqlite */; };
+		E5A593B3152F38DE004EB923 /* blackLotus.png in Resources */ = {isa = PBXBuildFile; fileRef = E5A593B2152F38DE004EB923 /* blackLotus.png */; };
+		E5A593B5152F396C004EB923 /* timeWalk.png in Resources */ = {isa = PBXBuildFile; fileRef = E5A593B4152F396C004EB923 /* timeWalk.png */; };
+		E5A593B7152F3973004EB923 /* moxSapphire.png in Resources */ = {isa = PBXBuildFile; fileRef = E5A593B6152F3973004EB923 /* moxSapphire.png */; };
+		E5A593B9152F39D7004EB923 /* manaDrain.png in Resources */ = {isa = PBXBuildFile; fileRef = E5A593B8152F39D7004EB923 /* manaDrain.png */; };
+		E5E5C819152E80E4008120C1 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E5C818152E80E4008120C1 /* libsqlite3.dylib */; };
+		E5E5C820152E9A0B008120C1 /* ancestralRecall.png in Resources */ = {isa = PBXBuildFile; fileRef = E5E5C81F152E9A0B008120C1 /* ancestralRecall.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,21 +47,33 @@
 		E53838D6152E075000AC44FA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E53838D8152E075000AC44FA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E53838DA152E075000AC44FA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		E53838DE152E075000AC44FA /* mtg_gameView-Info.plist */ = {isa = PBXFileReference; path = "mtg_gameView-Info.plist"; sourceTree = "<group>"; };
+		E53838DE152E075000AC44FA /* mtg_gameView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mtg_gameView-Info.plist"; sourceTree = "<group>"; };
 		E53838E0152E075000AC44FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E53838E2152E075000AC44FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E53838E4152E075000AC44FA /* mtg_gameView-Prefix.pch */ = {isa = PBXFileReference; path = "mtg_gameView-Prefix.pch"; sourceTree = "<group>"; };
-		E53838E5152E075000AC44FA /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		E53838E4152E075000AC44FA /* mtg_gameView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mtg_gameView-Prefix.pch"; sourceTree = "<group>"; };
+		E53838E5152E075000AC44FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E53838E6152E075000AC44FA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E53838E9152E075000AC44FA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		E53838EB152E075000AC44FA /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		E53838EB152E075000AC44FA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E53838EC152E075000AC44FA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E53838F3152E075000AC44FA /* mtg_gameViewTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mtg_gameViewTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E53838F4152E075000AC44FA /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		E53838FC152E075000AC44FA /* mtg_gameViewTests-Info.plist */ = {isa = PBXFileReference; path = "mtg_gameViewTests-Info.plist"; sourceTree = "<group>"; };
+		E53838FC152E075000AC44FA /* mtg_gameViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mtg_gameViewTests-Info.plist"; sourceTree = "<group>"; };
 		E53838FE152E075000AC44FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E5383900152E075000AC44FA /* mtg_gameViewTests.h */ = {isa = PBXFileReference; path = mtg_gameViewTests.h; sourceTree = "<group>"; };
+		E5383900152E075000AC44FA /* mtg_gameViewTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mtg_gameViewTests.h; sourceTree = "<group>"; };
 		E5383901152E075000AC44FA /* mtg_gameViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mtg_gameViewTests.m; sourceTree = "<group>"; };
+		E538390D152E08D800AC44FA /* mtg_iPad_frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mtg_iPad_frame.png; path = ../../../Desktop/mtg_iPad_frame.png; sourceTree = "<group>"; };
+		E5383910152E09A900AC44FA /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = ../../uiimageview_test/uiimageview_test/Card.h; sourceTree = "<group>"; };
+		E5383911152E09A900AC44FA /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = ../../uiimageview_test/uiimageview_test/Card.m; sourceTree = "<group>"; };
+		E5383915152E0D5B00AC44FA /* mtg_cardBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mtg_cardBack.png; path = ../../../Desktop/mtg_cardBack.png; sourceTree = "<group>"; };
+		E5A593A6152EB0BE004EB923 /* CardDb.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = CardDb.sqlite; path = ../../../Desktop/CardDb.sqlite; sourceTree = "<group>"; };
+		E5A593A8152F305C004EB923 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E5A593B2152F38DE004EB923 /* blackLotus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blackLotus.png; path = ../../../Desktop/blackLotus.png; sourceTree = "<group>"; };
+		E5A593B4152F396C004EB923 /* timeWalk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = timeWalk.png; path = ../../../Downloads/timeWalk.png; sourceTree = "<group>"; };
+		E5A593B6152F3973004EB923 /* moxSapphire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = moxSapphire.png; path = ../../../Downloads/moxSapphire.png; sourceTree = "<group>"; };
+		E5A593B8152F39D7004EB923 /* manaDrain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = manaDrain.png; path = ../../../Downloads/manaDrain.png; sourceTree = "<group>"; };
+		E5E5C818152E80E4008120C1 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		E5E5C81F152E9A0B008120C1 /* ancestralRecall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ancestralRecall.png; path = ../../../Desktop/ancestralRecall.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5E5C819152E80E4008120C1 /* libsqlite3.dylib in Frameworks */,
 				E53838D7152E075000AC44FA /* UIKit.framework in Frameworks */,
 				E53838D9152E075000AC44FA /* Foundation.framework in Frameworks */,
 				E53838DB152E075000AC44FA /* CoreGraphics.framework in Frameworks */,
@@ -100,6 +123,8 @@
 		E53838D5152E075000AC44FA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E5A593A8152F305C004EB923 /* CoreData.framework */,
+				E5E5C818152E80E4008120C1 /* libsqlite3.dylib */,
 				E53838D6152E075000AC44FA /* UIKit.framework */,
 				E53838D8152E075000AC44FA /* Foundation.framework */,
 				E53838DA152E075000AC44FA /* CoreGraphics.framework */,
@@ -111,11 +136,15 @@
 		E53838DC152E075000AC44FA /* mtg_gameView */ = {
 			isa = PBXGroup;
 			children = (
+				E538390F152E08E200AC44FA /* Resources */,
 				E53838E5152E075000AC44FA /* AppDelegate.h */,
+				E5383910152E09A900AC44FA /* Card.h */,
+				E5383911152E09A900AC44FA /* Card.m */,
 				E53838E6152E075000AC44FA /* AppDelegate.m */,
 				E53838E8152E075000AC44FA /* MainStoryboard.storyboard */,
 				E53838EB152E075000AC44FA /* ViewController.h */,
 				E53838EC152E075000AC44FA /* ViewController.m */,
+				E5A593A6152EB0BE004EB923 /* CardDb.sqlite */,
 				E53838DD152E075000AC44FA /* Supporting Files */,
 			);
 			path = mtg_gameView;
@@ -149,6 +178,20 @@
 				E53838FD152E075000AC44FA /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E538390F152E08E200AC44FA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E5A593B4152F396C004EB923 /* timeWalk.png */,
+				E5A593B6152F3973004EB923 /* moxSapphire.png */,
+				E5A593B8152F39D7004EB923 /* manaDrain.png */,
+				E5A593B2152F38DE004EB923 /* blackLotus.png */,
+				E5383915152E0D5B00AC44FA /* mtg_cardBack.png */,
+				E5E5C81F152E9A0B008120C1 /* ancestralRecall.png */,
+				E538390D152E08D800AC44FA /* mtg_iPad_frame.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +266,14 @@
 			files = (
 				E53838E1152E075000AC44FA /* InfoPlist.strings in Resources */,
 				E53838EA152E075000AC44FA /* MainStoryboard.storyboard in Resources */,
+				E538390E152E08D800AC44FA /* mtg_iPad_frame.png in Resources */,
+				E5383916152E0D5B00AC44FA /* mtg_cardBack.png in Resources */,
+				E5E5C820152E9A0B008120C1 /* ancestralRecall.png in Resources */,
+				E5A593A7152EB0BE004EB923 /* CardDb.sqlite in Resources */,
+				E5A593B3152F38DE004EB923 /* blackLotus.png in Resources */,
+				E5A593B5152F396C004EB923 /* timeWalk.png in Resources */,
+				E5A593B7152F3973004EB923 /* moxSapphire.png in Resources */,
+				E5A593B9152F39D7004EB923 /* manaDrain.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +311,7 @@
 				E53838E3152E075000AC44FA /* main.m in Sources */,
 				E53838E7152E075000AC44FA /* AppDelegate.m in Sources */,
 				E53838ED152E075000AC44FA /* ViewController.m in Sources */,
+				E5383912152E09A900AC44FA /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +483,7 @@
 				E5383907152E075000AC44FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E5383908152E075000AC44FA /* Build configuration list for PBXNativeTarget "mtg_gameViewTests" */ = {
 			isa = XCConfigurationList;
@@ -439,6 +492,7 @@
 				E538390A152E075000AC44FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

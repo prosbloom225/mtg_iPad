@@ -7,13 +7,74 @@
 //
 
 #import "AppDelegate.h"
+#import "/usr/include/sqlite3.h"
 
 @implementation AppDelegate
 
 @synthesize window = _window;
 
+- (void)createEditableCopyOfDatabaseIfNeeded {
+    
+    NSLog(@"Creating editable copy of database");
+    // First, test for existence.
+    BOOL success;
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSError *error;
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString *writableDBPath = [documentsDirectory stringByAppendingPathComponent:@"CardDb.sqlite"];
+    success = [fileManager fileExistsAtPath:writableDBPath];
+    if (success) return;
+    // The writable database does not exist, so copy the default to the appropriate location.
+    NSString *defaultDBPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"CardDb.sqlite"];
+    success = [fileManager copyItemAtPath:defaultDBPath toPath:writableDBPath error:&error];
+    if (!success) {
+        NSAssert1(0, @"Failed to create writable database file with message ‘%@’.", [error localizedDescription]);
+    }
+}
++(sqlite3 *) getNewDBConnection{
+    sqlite3 *newDBconnection;
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString *path = [documentsDirectory stringByAppendingPathComponent:@"CardDb.sqlite"];
+    // Open the database. The database was prepared outside the application.
+    if (sqlite3_open([path UTF8String], &newDBconnection) == SQLITE_OK) {
+        
+        NSLog(@"Database Successfully Opened  ");
+        
+    } else {
+        NSLog(@"Error in opening database  ");
+    }
+    
+    return newDBconnection; 
+}
+-(void) initializeTableData
+{
+    sqlite3 *db = [AppDelegate getNewDBConnection];
+    sqlite3_stmt *statement = nil;
+    const char *sql = "select name from CardDb";
+    if(sqlite3_prepare_v2(db, sql, -1, &statement, NULL) != SQLITE_OK)
+    {
+        NSLog(0,@"Error initializing database. ", sqlite3_errmsg(db));
+    }
+    else
+    {
+        while (sqlite3_step(statement) == SQLITE_ROW)
+        {
+            //NSLog([NSString stringWithFormat:@"%s",(char*)sqlite3_column_text(statement, 0)]);
+                  
+        }
+        sqlite3_finalize(statement);
+        
+    }
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // Initialize Card Db
+    [self createEditableCopyOfDatabaseIfNeeded];
+    
+    
     // Override point for customization after application launch.
     return YES;
 }
