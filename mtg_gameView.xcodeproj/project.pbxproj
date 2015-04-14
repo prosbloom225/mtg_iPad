@@ -23,6 +23,7 @@
 		E538390E152E08D800AC44FA /* mtg_iPad_frame.png in Resources */ = {isa = PBXBuildFile; fileRef = E538390D152E08D800AC44FA /* mtg_iPad_frame.png */; };
 		E5383912152E09A900AC44FA /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = E5383911152E09A900AC44FA /* Card.m */; };
 		E5383916152E0D5B00AC44FA /* mtg_cardBack.png in Resources */ = {isa = PBXBuildFile; fileRef = E5383915152E0D5B00AC44FA /* mtg_cardBack.png */; };
+		E54F4E7D152F4A0A000A2026 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = E54F4E7C152F4A0A000A2026 /* Deck.m */; };
 		E5A593A7152EB0BE004EB923 /* CardDb.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = E5A593A6152EB0BE004EB923 /* CardDb.sqlite */; };
 		E5A593B3152F38DE004EB923 /* blackLotus.png in Resources */ = {isa = PBXBuildFile; fileRef = E5A593B2152F38DE004EB923 /* blackLotus.png */; };
 		E5A593B5152F396C004EB923 /* timeWalk.png in Resources */ = {isa = PBXBuildFile; fileRef = E5A593B4152F396C004EB923 /* timeWalk.png */; };
@@ -66,6 +67,8 @@
 		E5383910152E09A900AC44FA /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = ../../uiimageview_test/uiimageview_test/Card.h; sourceTree = "<group>"; };
 		E5383911152E09A900AC44FA /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = ../../uiimageview_test/uiimageview_test/Card.m; sourceTree = "<group>"; };
 		E5383915152E0D5B00AC44FA /* mtg_cardBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mtg_cardBack.png; path = ../../../Desktop/mtg_cardBack.png; sourceTree = "<group>"; };
+		E54F4E7B152F4A0A000A2026 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		E54F4E7C152F4A0A000A2026 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
 		E5A593A6152EB0BE004EB923 /* CardDb.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = CardDb.sqlite; path = ../../../Desktop/CardDb.sqlite; sourceTree = "<group>"; };
 		E5A593A8152F305C004EB923 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		E5A593B2152F38DE004EB923 /* blackLotus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blackLotus.png; path = ../../../Desktop/blackLotus.png; sourceTree = "<group>"; };
@@ -140,6 +143,8 @@
 				E53838E5152E075000AC44FA /* AppDelegate.h */,
 				E5383910152E09A900AC44FA /* Card.h */,
 				E5383911152E09A900AC44FA /* Card.m */,
+				E54F4E7B152F4A0A000A2026 /* Deck.h */,
+				E54F4E7C152F4A0A000A2026 /* Deck.m */,
 				E53838E6152E075000AC44FA /* AppDelegate.m */,
 				E53838E8152E075000AC44FA /* MainStoryboard.storyboard */,
 				E53838EB152E075000AC44FA /* ViewController.h */,
@@ -239,7 +244,7 @@
 		E53838C9152E075000AC44FA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 			};
 			buildConfigurationList = E53838CC152E075000AC44FA /* Build configuration list for PBXProject "mtg_gameView" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -312,6 +317,7 @@
 				E53838E7152E075000AC44FA /* AppDelegate.m in Sources */,
 				E53838ED152E075000AC44FA /* ViewController.m in Sources */,
 				E5383912152E09A900AC44FA /* Card.m in Sources */,
+				E54F4E7D152F4A0A000A2026 /* Deck.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +373,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -381,7 +388,9 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -393,6 +402,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -400,8 +410,10 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;

@@ -7,14 +7,26 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Deck.h"
+#import "Card.h"
 
 #define myAppDelegate [[UIApplication sharedApplication] delegate]
 
 @interface ViewController : UIViewController
 {
+    IBOutlet UIButton *playerLibraryDrawCard;
+    Deck *playerLibrary;
+    Deck *playerHand;
+    UIPopoverController *popoverController;
 }
 
-@property (nonatomic,strong) NSManagedObjectContext* managedObjectContext;
+@property (nonatomic, retain) UIButton *playerLibraryDrawCard;
+@property (nonatomic, retain) Deck *playerLibrary;
+@property (nonatomic, retain) Deck *playerHand;
+@property (nonatomic, retain) UIPopoverController *popoverController;
+
+
+
+-(void) drawCard;
 
 @end

@@ -7,12 +7,13 @@
 //
 
 #import "ViewController.h"
-#import "Card.h"
 
 
 
 @implementation ViewController
-@synthesize managedObjectContext;
+@synthesize playerLibraryDrawCard;
+@synthesize playerLibrary, playerHand;
+@synthesize popoverController;
 
 
 
@@ -24,8 +25,7 @@
 
 #pragma mark - View lifecycle
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad{
     [super viewDidLoad];
 	// User Code
     Card *testCard1 = [[Card alloc] initWithCardID: 1];
@@ -40,11 +40,32 @@
     [self.view addSubview:testCard4];
     [self.view addSubview:testCard5];
     
+    // Test deck
+    playerLibrary = [[Deck alloc] init];
+    
+    [playerLibrary addCard:testCard1];
+    [playerLibrary addCard:testCard2];
+    [playerLibrary addCard:testCard3];
+    [playerLibrary addCard:testCard4];
+    [playerLibrary addCard:testCard5];
+    [playerLibrary printDeck];
+    
+    // Test Hand
+    playerHand = [[Deck alloc] init];
+    
+    // Draw from library
+    [playerLibraryDrawCard addTarget:self action:@selector(drawCard) forControlEvents:UIControlEventTouchUpInside];
+    
 
 }
-
-- (void)viewDidUnload
+-(void) drawCard
 {
+    [playerLibrary drawCard];
+   
+    
+}
+- (void)viewDidUnload{
+    playerLibraryDrawCard = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
